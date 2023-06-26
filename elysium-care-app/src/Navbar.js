@@ -4,8 +4,8 @@ export default function Navbar(){
         <ul>
             
             <li><a href="/about">About</a></li>
-            <li><a href="/findWhatYouNeed">Find What You Need</a></li> 
-            <li><a href="/getInvolved">Get Involved</a></li>
+            <li><a href="/need">Find What You Need</a></li> 
+            <li><a href="/involved">Get Involved</a></li>
             <li><a href="/referrals">Referrals</a></li>
             <li><a href="/donate">Donate</a></li>
             <li><a href="/search">Search</a></li>

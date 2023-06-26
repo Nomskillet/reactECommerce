@@ -6,36 +6,25 @@ import Involved from "./pages/Involved"
 import Referrals from "./pages/Referrals"
 import Donate from "./pages/Donate"
 import Search from "./pages/Search"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
-  let component 
-  switch (window.location.pathname){
-      case "/":
-        component = <Home/>
-        break
-      case "/about":
-        component = <About/>
-        break
-      case "/need":
-        component = <Need/>
-        break
-      case "/involved":
-        component = <Involved/>
-        break
-      case "/referrals":
-        component = <Referrals/>
-        break
-      case "/donate":
-        component = <Donate/>
-        break
-      case "/search":
-        component = <Search/>
-        break
-  }
+  
+
   return (
   <>
-  <Navbar />
-  {component}
+    <Navbar />
+    <div className= "container">
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/need" element={<Need/>} />
+        <Route path="/involved" element={<Involved/>} />
+        <Route path="/referrals" element={<Referrals/>} />
+        <Route path="/donate" element={<Donate/>} />
+        <Route path="/search" element={<Search/>} />
+      </Routes>
+    </div>
   </>
   )
 }

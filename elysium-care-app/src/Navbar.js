@@ -47,9 +47,9 @@ export default function Navbar() {
       </Link>
       <ul>
             <CustomLink to="/about">About</CustomLink>
-            <CustomLink to="/need">Find What You Need</CustomLink>
-            <CustomLink to="/involved">Get Involved</CustomLink>
-            <CustomLink to="/referrals">Referrals</CustomLink>
+            {/* <CustomLink to="/need">Registration</CustomLink> */}
+            <CustomLink to="/involved">Log In</CustomLink>
+            <CustomLink to="/referrals">Services</CustomLink>
             <CustomLink to="/donate">Donate</CustomLink>
             <CustomLink to="/search">Search</CustomLink>
       </ul>
